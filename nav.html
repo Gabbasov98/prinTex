@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .m-wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .m-wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="m-wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+
+
+
+
+        <button data-modal="calcModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Расчет стоимости
+        </button>
+        <br>
+        <button data-modal="calcModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Расчет стоимости 2
+        </button>
+
+
+        <!--        <code>-->
+
+
+        <!--            ('components/page-blocks/_filter-slider.html',{ <br>-->
+        <!--            "start1":"0", <br>-->
+        <!--            "start2":"30000", <br>-->
+        <!--            "min":"1000", <br>-->
+        <!--            "max":"100000", <br>-->
+        <!--            })-->
+
+        <!--        </code>-->
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="calcModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text35 bold-text">
+                    Расчет стоимости
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.png" alt="">
+                </button>
+            </div>
+            <div class="modal__product">
+                Французская косынка
+            </div>
+            <div class="modal__grid">
+                <div class="modal__col">
+                    <div class="modal__img">
+                        <img src="img/product.webp" alt="">
+                    </div>
+                </div>
+                <div class="modal__col">
+                    <div class="modal__fields">
+                        <div class="fg">
+                            <label>Выбрать размер:</label>
+                            <select>
+                                <option selected>60x60x85 см</option>
+                                <option>60x60x85 см 2</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>Выбрать материал:</label>
+                            <select>
+                                <option selected>Креп-сатин (100% полиэстер, плотность 140 гр/м2)</option>
+                                <option>Креп-сатин (100% полиэстер, плотность 140 гр/м2) 2</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>Выбрать обработку:</label>
+                            <select>
+                                <option selected>Характеристика</option>
+                                <option>Характеристика 2</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>Выбрать способ печати:</label>
+                            <select>
+                                <option selected>Сублимационная печать</option>
+                                <option>Сублимационная печать 2</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>Количество:</label>
+                            <div class='cartcalc'>
+                                <button class='ccalc-minus'>
+                                    <img src="img/bottom.png" alt="">
+                                </button>
+                                <input type='text' value='1'>
+                                <button class='ccalc-plus'>
+                                    <img src="img/top.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal__wrap">
+                            <div class="fg">
+                                <label>Ваше имя:</label>
+                                <input type="text" placeholder="Виктор">
+                            </div>
+                            <div class="fg">
+                                <label>Телефон:</label>
+                                <input type="tel" placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>Я согласен на обработку персональных данных.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn m-btn m-btn-blue">
+                    <span>Рассчитать заказ</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="calcModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="modal__result">
+                    Стоимость Вашего заказа: <span class="modal__result-num">590</span> <span class="modal__result-currency">руб.</span>
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.png" alt="">
+                </button>
+            </div>
+            <div class="modal__bottom">
+                <div class="modal__hint">
+                    Ваш заказа принят! <br>
+                В ближайшее время наши менеджеры свяжутся с Вами.
+                </div>
+                <a href="" class="modal__btn m-btn m-btn-blue">
+                    <span>вернуться на главную</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="script.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
