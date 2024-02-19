@@ -34,6 +34,30 @@
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Карточка товара
         </a>
+        <a href="faq.html" style="display: block; margin-bottom: 20px;">
+            Вопросы и ответы
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Каталог услуг
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="team.html" style="display: block; margin-bottom: 20px;">
+            Наша команда
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы клиентов
+        </a>
+        <a href="portfolio.html" style="display: block; margin-bottom: 20px;">
+            Портфолио
+        </a>
+        <a href="certificates.html" style="display: block; margin-bottom: 20px;">
+            Сертификаты
+        </a>
 
 
 
@@ -44,6 +68,18 @@
         <br>
         <button data-modal="calcModal2" style="border: 2px solid #000;margin-bottom: 20px;">
             Расчет стоимости 2
+        </button>
+        <br>
+        <button data-modal="orderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заказ
+        </button>
+        <br>
+        <button data-modal="orderModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заказ 2
+        </button>
+        <br>
+        <button data-modal="callModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заказать звонок
         </button>
 
 
@@ -174,6 +210,186 @@
                 <a href="" class="modal__btn m-btn m-btn-blue">
                     <span>вернуться на главную</span>
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal order-modal" id="orderModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text35 bold-text">
+                    Заказ
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.png" alt="">
+                </button>
+            </div>
+            <div class="order-modal__desc">
+                Заполните поля данной формы, чтобы наш менеджер
+                мог связаться с Вами для уточнения заказа.
+            </div>
+            <form class="order-form">
+                <div class="fg order-form__field">
+                    <label class="order-form__title">Ваше имя:</label>
+                    <input type="text">
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">Телефон для связи<span>*</span></label>
+                    <input type="tel">
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">E-mail<span>*</span></label>
+                    <input type="email">
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">
+                        Комментарий (адрес доставки,
+                        желаемая дата получения)
+                    </label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="order-form__field">
+                    <div class="order-form__title">
+                        Предварительная сумма:
+                    </div>
+                    <div class="order-form__price">
+                        <span>1190</span> руб.
+                    </div>
+                </div>
+            </form>
+            <div class="modal__bottom">
+                <div class="modal__hint">
+                    Созданный макет будет отправлен вам на указанную почту. Отправка сложного макета
+                    может занимать некоторое время, не закрываете страницу до завершения загрузки.
+                </div>
+                <button class="modal__btn m-btn m-btn-blue">
+                    <span>отправить</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal order-modal" id="orderModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text35 bold-text">
+                    Заказ
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close.png" alt="">
+                </button>
+            </div>
+            <div class="order-modal__desc">
+                Заполните поля данной формы, чтобы наш менеджер
+                мог связаться с Вами для уточнения заказа.
+            </div>
+            <form class="order-form">
+                <div class="fg order-form__field">
+                    <label class="order-form__title">Ваше имя:</label>
+                    <input type="text">
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">Телефон для связи<span>*</span></label>
+                    <input type="tel">
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">E-mail<span>*</span></label>
+                    <input type="email">
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">
+                        Комментарий (адрес доставки,
+                        желаемая дата получения)
+                    </label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="fg order-form__field">
+                    <label class="order-form__title">
+                        Прикрепить фотографию/макет
+                    </label>
+                    <div class="file-input">
+                        <input type="file">
+                        <button class="file-input__btn m-btn">
+                            Выбрать файл
+                        </button>
+                        <div class="file-input__hint">
+                            JPG или PNG размером не более 14 МБ.
+                        </div>
+                    </div>
+                </div>
+                <div class="fg order-form__field">
+                    <label class="order-form__title">
+                        Количество<span>*</span>
+                    </label>
+                    <div class="order-form__count">
+                        <div class='cartcalc'>
+                            <button class='ccalc-minus'>
+                                <img src="img/bottom.png" alt="">
+                            </button>
+                            <input type='text' value='1'>
+                            <button class='ccalc-plus'>
+                                <img src="img/top.png" alt="">
+                            </button>
+                        </div>
+                        <div class="order-form__count-text">
+                            Минимальный заказ от 10 шт.
+                        </div>
+                    </div>
+                </div>
+                <div class="order-form__field">
+                    <div class="order-form__title">
+                        Предварительная сумма:
+                    </div>
+                    <div class="order-form__price">
+                        <span>1190</span> руб.
+                    </div>
+                </div>
+            </form>
+            <div class="modal__bottom">
+                <div class="modal__hint">
+                    Созданный макет будет отправлен вам на указанную почту. Отправка сложного макета
+                    может занимать некоторое время, не закрываете страницу до завершения загрузки.
+                </div>
+                <button class="modal__btn m-btn m-btn-blue">
+                    <span>отправить</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal call-modal" id="callModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text35 bold-text">
+                    Заказать звонок
+                </div>
+            </div>
+            <form action="" class="call-form">
+                <div class="fg _type3">
+                    <label>Ваше имя <span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="fg _type3">
+                    <label>Номер телефона <span>*</span></label>
+                    <input type="tel">
+                </div>
+                <div class="m-check">
+                    <input checked type="checkbox">
+                    <label>
+                        <span>Я согласен на обработку персональных данных.</span>
+                    </label>
+                </div>
+            </form>
+            <div class="modal__bottom">
+                <button class="modal__btn m-btn m-btn-blue">
+                    <span>заказать звонок</span>
+                </button>
             </div>
         </div>
     </div>
