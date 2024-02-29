@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
-    <link rel="stylesheet" href="main.css">
+    <!--    <link rel="stylesheet" href="main.css">-->
     <link rel="stylesheet" href="css/style.min.css">
     <title>Контакты</title>
 </head>
@@ -16,55 +16,75 @@
 
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header__main">
-                <div class="header__main__logo header__main-item">
-                    <a href="#"><img src="./uploads/logo.png" alt="PrinTex"></a>
-                </div>
-                <div class="header__main__adress header__main-item">
-                    <img src="./uploads/h-adress.png" alt="h-adress">
-                    <span>г. Улан-Удэ, 112мкр-н.<br>дом 27, цоколь</span>
-                </div>
-                <div class="header__main__calculator header__main-item">
-                    <a href="#"><img src="./uploads/h-calculator.png" alt="h-calculator"></a>
-                    <span>Калькулятор<br>стоимости</span>
-                </div>
-                <div class="header__main__clock header__main-item">
-                    <img src="./uploads/h-clock.png" alt="h-clock">
-                    <span>Пн - Пт : 09:00 - 18:00<br>Сб - Вс. : выходной</span>
-                </div>
-                <div class="header__main__phone header__main-item">
-                    <img src="./uploads/h-phone.png" alt="h-phone">
-                    <a class="headerphone" href="tel:+79244573636">8 (9244) 57-36-36</a>
-                    <div class="callbackme">ПЕРЕЗВОНИТЕ МНЕ</div>
-                </div>
-            </div>
-            <div class="header__menu">
-                <a href="#" id="burgermenu" class="header__main-menu-burger">
-                    <img src="./uploads/burgermenu.png" alt="burgermenu">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="header__logo">
+                    <img src="img/logo2.png" alt="">
                 </a>
-                <img class="header__menu__item home" src="./uploads/h-house.png" alt="h-house">
-                <a href="#" class="header__menu__item">О КОМПАНИИ</a>
-                <a href="#" class="header__menu__item">КАТАЛОГ УСЛУГ</a>
-                <a href="#" class="header__menu__item">НАШИ РАБОТЫ</a>
-                <a href="#" class="header__menu__item">КОНТАКТЫ</a>
-                <a href="#" class="header__menu__item">НАША КОМАНДА</a>
-                <a href="#" class="header__menu__item">ОТЗЫВЫ</a>
-                <a href="#" class="header__menu__item">ВОПРОСЫ И ОТВЕТЫ</a>
-                <a href="#" class="header__menu__item">СЕРТИФИКАТЫ</a>
-                <a href="#" class="header__menu__item">ТРЕБОВАНИЯ К ФАЙЛАМ</a>
+
+                <button class="burger m-btn-primary">
+                    <img src="img/burger.svg" alt="" class="_view1">
+                    <img src="img/burger2.svg" alt="" class="_view2">
+                </button>
+
+                <div class="menu">
+                    <div class="nav">
+                        <a href="" class="nav__link nav__link--main">
+                            <img src="img/home.png" alt="">
+                            <span>Главная</span>
+                        </a>
+                        <a href="" class="nav__link">О компании</a>
+                        <a href="" class="nav__link">Каталог услуг</a>
+                        <a href="" class="nav__link">Наши работы</a>
+                        <a href="" class="nav__link">Контакты</a>
+                        <a href="" class="nav__link">Наша Команда</a>
+                        <a href="" class="nav__link">Отзывы</a>
+                        <a href="" class="nav__link">Вопросы и ответы</a>
+                        <a href="" class="nav__link">Сертификаты</a>
+                        <a href="" class="nav__link">требования к файлам</a>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-info__icon">
+                            <img src="img/mark.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            г. Улан-Удэ, 112 мкр-н. <br>
+                    дом 27, цоколь
+                        </div>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-info__icon">
+                            <img src="img/calculator.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            Калькулятор <br>
+                    стоимости
+                        </div>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-info__icon">
+                            <img src="img/clock.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            <span>Пн - Пт : 09:00 - 18:00</span> <br>
+                            <span>Сб - Вс. : выходной</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <a href="" class="feedback__phone">
+                            <img src="img/phone3.png" alt="">
+                            <span>8 (9244) 57-36-36</span>
+                        </a>
+                        <button class="feedback__btn m-btn m-btn-primary">
+                            <span>Перезвоните мне</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <ul class="header__menu__mobile">
-                <li class="header__menu__mobile__item"><a href="#">О КОМПАНИИ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">КАТАЛОГ УСЛУГ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">НАШИ РАБОТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">КОНТАКТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">НАША КОМАНДА</a></li>
-                <li class="header__menu__mobile__item"><a href="#">ОТЗЫВЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">СЕРТИФИКАТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">ТРЕБОВАНИЯ К ФАЙЛАМ</a></li>
-            </ul>
         </div>
 
     </header>
@@ -175,60 +195,78 @@
     </div>
 
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__mainblock">
-                <div class="footer__mainblock__item ">
-                    <img src="./uploads/logofooter.png" alt="logo">
-                    <div class="footer__mainblock__item__text">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="footer__info">
                         г. Улан-Удэ, 112 мкр-н. дом 27, цоколь <br>
-                WhatsApp / Viber / Telegram: 8(9244) 57-36-36 <br>
-                printex@mail.ru
+                WhatsApp / Viber / Telegram: <a href="">8(9244) 57-36-36</a> <br>
+                        <a href="mailto:printex@mail.ru">
+                            printex@mail.ru
+                        </a>
                     </div>
-                    <div class="footer__mainblock__item__text">
+                    <div class="footer__info">
                         Пн - Пт : 09:00 - 18:00 <br>
                 Сб - Вс. : выходной
                     </div>
                 </div>
-                <div class="footer__mainblock__item footer__mainblock__item__blocklinks">
-                    <div class="footer__mainblock__item__listlinks">
-                        <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Наша команда</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Наши работы / Портфолио</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__mainblock__item__listlinks">
-                        <ul>
-                            <li><a href="#">Каталог услуг</a></li>
-                            <li><a href="#">Требование к файлам</a></li>
-                            <li><a href="#">Вопросы и ответы</a></li>
-                            <li><a href="#">Сертификаты</a></li>
-                            <li><a href="#">Обработка персональных данных</a></li>
-                        </ul>
+
+                <div class="footer__col">
+                    <div class="footer-nav">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Каталог услуг</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Требования к файлам</a></li>
+                        <li><a href="">Наша Команда</a></li>
+                        <li><a href="">Вопросы и ответы</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">Сертификаты</a></li>
+                        <li><a href="">Наши работы / Портфолио</a></li>
+                        <li><a href="">Обработка персональных данных</a></li>
                     </div>
                 </div>
-                <div class="footer__mainblock__item">
-                    <div class="footer__mainblock__item__call">
-                        <form action="">
-                            <input type="text" name="phone" placeholder="Ваш телефон">
-                            <input type="submit" name="submit" value="ПЕРЕЗВОНИТЕ МНЕ">
-                        </form>
-                    </div>
-                    <div class="footer__mainblock__item__social">
-                        <span>Оставайтесь на связи:</span>
-                        <a href="#"><img src="./uploads/f-whatsapp.png" alt="f-whatsapp"></a>
-                        <a href="#"><img src="./uploads/f-inst.png" alt="f-inst"></a>
-                        <a href="#"><img src="./uploads/f-vk.png" alt="f-vk"></a>
+
+                <div class="footer__col footer__col3">
+                    <form class="footer-subscribe">
+                        <div class="footer-subscribe__field">
+                            <input type="text" placeholder="Ваш телефон">
+                            <img src="img/phone.png" alt="" class="footer-subscribe__icon">
+                        </div>
+                        <button class="footer-subscribe__btn m-btn m-btn-primary">
+                            <span>Перезвоните мне</span>
+                        </button>
+                    </form>
+                    <div class="footer-socials">
+                        <div class="footer-socials__title">
+                            Оставайтесь на связи:
+                        </div>
+                        <a href="" class="footer-socials__item">
+                            <img src="img/whatsapp.png" alt="">
+                        </a>
+                        <a href="" class="footer-socials__item">
+                            <img src="img/instagram.png" alt="">
+                        </a>
+                        <a href="" class="footer-socials__item">
+                            <img src="img/vk2.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer__copyright">
-                <div class="footer__copyright__text">Copyright © 2023 г. «Printex - Текстильная типография». Все права защищены</div>
-                <div class="footer__copyright__contact"><a href="https://cg-top.ru/">Разработка сайта — contactgroup.ru</a></div>
+            <div class="footer__bottom">
+                <div class="footer__c">
+                    Copyright © 2023 г. «Printex - Текстильная типография». Все права защищены
+                </div>
+                <div class="footer__by">
+                    Разработка сайта — <a href="">contactgroup.ru</a>
+                </div>
             </div>
         </div>
+        <button class="scroll-up">
+            <img src="img/arrow_top.png" alt="">
+        </button>
 
     </footer>
 
@@ -236,7 +274,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
     <script src="js/main.min.js"></script>
 
 </body>

@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
-    <link rel="stylesheet" href="main.css">
+    <!--    <link rel="stylesheet" href="main.css">-->
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 </head>
@@ -16,385 +16,540 @@
 
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header__main">
-                <div class="header__main__logo header__main-item">
-                    <a href="#"><img src="./uploads/logo.png" alt="PrinTex"></a>
-                </div>
-                <div class="header__main__adress header__main-item">
-                    <img src="./uploads/h-adress.png" alt="h-adress">
-                    <span>г. Улан-Удэ, 112мкр-н.<br>дом 27, цоколь</span>
-                </div>
-                <div class="header__main__calculator header__main-item">
-                    <a href="#"><img src="./uploads/h-calculator.png" alt="h-calculator"></a>
-                    <span>Калькулятор<br>стоимости</span>
-                </div>
-                <div class="header__main__clock header__main-item">
-                    <img src="./uploads/h-clock.png" alt="h-clock">
-                    <span>Пн - Пт : 09:00 - 18:00<br>Сб - Вс. : выходной</span>
-                </div>
-                <div class="header__main__phone header__main-item">
-                    <img src="./uploads/h-phone.png" alt="h-phone">
-                    <a class="headerphone" href="tel:+79244573636">8 (9244) 57-36-36</a>
-                    <div class="callbackme">ПЕРЕЗВОНИТЕ МНЕ</div>
-                </div>
-            </div>
-            <div class="header__menu">
-                <a href="#" id="burgermenu" class="header__main-menu-burger">
-                    <img src="./uploads/burgermenu.png" alt="burgermenu">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="header__logo">
+                    <img src="img/logo2.png" alt="">
                 </a>
-                <img class="header__menu__item home" src="./uploads/h-house.png" alt="h-house">
-                <a href="#" class="header__menu__item">О КОМПАНИИ</a>
-                <a href="#" class="header__menu__item">КАТАЛОГ УСЛУГ</a>
-                <a href="#" class="header__menu__item">НАШИ РАБОТЫ</a>
-                <a href="#" class="header__menu__item">КОНТАКТЫ</a>
-                <a href="#" class="header__menu__item">НАША КОМАНДА</a>
-                <a href="#" class="header__menu__item">ОТЗЫВЫ</a>
-                <a href="#" class="header__menu__item">ВОПРОСЫ И ОТВЕТЫ</a>
-                <a href="#" class="header__menu__item">СЕРТИФИКАТЫ</a>
-                <a href="#" class="header__menu__item">ТРЕБОВАНИЯ К ФАЙЛАМ</a>
+
+                <button class="burger m-btn-primary">
+                    <img src="img/burger.svg" alt="" class="_view1">
+                    <img src="img/burger2.svg" alt="" class="_view2">
+                </button>
+
+                <div class="menu">
+                    <div class="nav">
+                        <a href="" class="nav__link nav__link--main">
+                            <img src="img/home.png" alt="">
+                            <span>Главная</span>
+                        </a>
+                        <a href="" class="nav__link">О компании</a>
+                        <a href="" class="nav__link">Каталог услуг</a>
+                        <a href="" class="nav__link">Наши работы</a>
+                        <a href="" class="nav__link">Контакты</a>
+                        <a href="" class="nav__link">Наша Команда</a>
+                        <a href="" class="nav__link">Отзывы</a>
+                        <a href="" class="nav__link">Вопросы и ответы</a>
+                        <a href="" class="nav__link">Сертификаты</a>
+                        <a href="" class="nav__link">требования к файлам</a>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-info__icon">
+                            <img src="img/mark.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            г. Улан-Удэ, 112 мкр-н. <br>
+                    дом 27, цоколь
+                        </div>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-info__icon">
+                            <img src="img/calculator.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            Калькулятор <br>
+                    стоимости
+                        </div>
+                    </div>
+
+                    <div class="header-info">
+                        <div class="header-info__icon">
+                            <img src="img/clock.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            <span>Пн - Пт : 09:00 - 18:00</span> <br>
+                            <span>Сб - Вс. : выходной</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <a href="" class="feedback__phone">
+                            <img src="img/phone3.png" alt="">
+                            <span>8 (9244) 57-36-36</span>
+                        </a>
+                        <button class="feedback__btn m-btn m-btn-primary">
+                            <span>Перезвоните мне</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <ul class="header__menu__mobile">
-                <li class="header__menu__mobile__item"><a href="#">О КОМПАНИИ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">КАТАЛОГ УСЛУГ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">НАШИ РАБОТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">КОНТАКТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">НАША КОМАНДА</a></li>
-                <li class="header__menu__mobile__item"><a href="#">ОТЗЫВЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">СЕРТИФИКАТЫ</a></li>
-                <li class="header__menu__mobile__item"><a href="#">ТРЕБОВАНИЯ К ФАЙЛАМ</a></li>
-            </ul>
         </div>
 
     </header>
 
     <div class="maincontent">
-        <div class="page-top">
+        <div class="main">
             <div class="container">
-                <div class="breadcrumbs">
-                    <a href="" class="breadcrumbs__item">Главная</a>
-                    <a href="" class="breadcrumbs__item">Каталог услуг</a>
-                    <a href="" class="breadcrumbs__item">Корпоративная одежда</a>
-                    <div class="breadcrumbs__item">Французские косынки</div>
-                </div>
-                <h1 class="text27 bold-text">
-                    Французская косынка
-                </h1>
-            </div>
-        </div>
+                <div class="main-slider slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="main-banner swiper-slide m-backdrop">
+                                <div class="main-banner__content">
 
-        <div class="catalog-item">
-            <div class="container">
-                <div class="catalog-item__inner">
-                    <div class="catalog-item__col">
-                        <div class="gallery">
-                            <div class="gallery__big">
-                                <div class="swiper mySwiper2">
-                                    <div class="swiper-wrapper gallery-group">
-                                        <div class="swiper-slide">
-                                            <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
-                                                <img src="img/gallery.webp" alt="Галлерея">
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="img/gallery2.webp" class="gallery__img" data-fancybox="@@album">
-                                                <img src="img/gallery2.webp" alt="Галлерея">
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="img/gallery3.webp" class="gallery__img" data-fancybox="@@album">
-                                                <img src="img/gallery3.webp" alt="Галлерея">
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="img/gallery4.webp" class="gallery__img" data-fancybox="@@album">
-                                                <img src="img/gallery4.webp" alt="Галлерея">
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="img/gallery4.webp" class="gallery__img" data-fancybox="@@album">
-                                                <img src="img/gallery4.webp" alt="Галлерея">
-                                            </a>
-                                        </div>
+                                    <h1 class="main-banner__title">
+                                        Прямая печать <br>
+            на текстильном принтере
+                                    </h1>
+
+
+                                    <div class="main-banner__desc">
+                                        Позволяет наносить высококачественные полноцветные изображения
+                                        на одежду (футболки, толстовки, рубашки, поло) и сумки, реализуя
+                                        самые смелые и красочные дизайнерские замыслы.
+                                    </div>
+                                    <div class="main-banner__nav">
+                                        <a href="" class="main-banner__btn m-btn m-btn-primary">
+                                            <span>подробнее</span>
+                                        </a>
                                     </div>
                                 </div>
+                                <div class="main-banner__img">
+                                    <img src="img/main_img.webp" alt="">
+                                </div>
                             </div>
-                            <div class="gallery__small">
-                                <div thumbsSlider class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="gallery__img">
-                                                <img src="img/gallery.webp" alt="Галлерея">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="gallery__img">
-                                                <img src="img/gallery2.webp" alt="Галлерея">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="gallery__img">
-                                                <img src="img/gallery3.webp" alt="Галлерея">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="gallery__img">
-                                                <img src="img/gallery4.webp" alt="Галлерея">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="gallery__img">
-                                                <img src="img/gallery4.webp" alt="Галлерея">
-                                            </div>
-                                        </div>
+
+                            <div class="main-banner swiper-slide m-backdrop">
+                                <div class="main-banner__content">
+
+
+                                    <div class="main-banner__title">
+                                        Прямая печать <br>
+            на текстильном принтере
+                                    </div>
+
+                                    <div class="main-banner__desc">
+                                        Позволяет наносить высококачественные полноцветные изображения
+                                        на одежду (футболки, толстовки, рубашки, поло) и сумки, реализуя
+                                        самые смелые и красочные дизайнерские замыслы.
+                                    </div>
+                                    <div class="main-banner__nav">
+                                        <a href="" class="main-banner__btn m-btn m-btn-primary">
+                                            <span>подробнее</span>
+                                        </a>
                                     </div>
                                 </div>
-
-                                <div class="swiper-button swiper-button-prev">
-                                    <img src="img/prev.png" alt="">
-                                </div>
-                                <div class="swiper-button swiper-button-next">
-                                    <img src="img/next.png" alt="">
+                                <div class="main-banner__img">
+                                    <img src="img/main_img.webp" alt="">
                                 </div>
                             </div>
+
+                            <div class="main-banner swiper-slide m-backdrop">
+                                <div class="main-banner__content">
+
+
+                                    <div class="main-banner__title">
+                                        Прямая печать <br>
+            на текстильном принтере
+                                    </div>
+
+                                    <div class="main-banner__desc">
+                                        Позволяет наносить высококачественные полноцветные изображения
+                                        на одежду (футболки, толстовки, рубашки, поло) и сумки, реализуя
+                                        самые смелые и красочные дизайнерские замыслы.
+                                    </div>
+                                    <div class="main-banner__nav">
+                                        <a href="" class="main-banner__btn m-btn m-btn-primary">
+                                            <span>подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main-banner__img">
+                                    <img src="img/main_img.webp" alt="">
+                                </div>
+                            </div>
+
+                            <div class="main-banner swiper-slide m-backdrop">
+                                <div class="main-banner__content">
+
+
+                                    <div class="main-banner__title">
+                                        Прямая печать <br>
+            на текстильном принтере
+                                    </div>
+
+                                    <div class="main-banner__desc">
+                                        Позволяет наносить высококачественные полноцветные изображения
+                                        на одежду (футболки, толстовки, рубашки, поло) и сумки, реализуя
+                                        самые смелые и красочные дизайнерские замыслы.
+                                    </div>
+                                    <div class="main-banner__nav">
+                                        <a href="" class="main-banner__btn m-btn m-btn-primary">
+                                            <span>подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main-banner__img">
+                                    <img src="img/main_img.webp" alt="">
+                                </div>
+                            </div>
+
                         </div>
-
                     </div>
-                    <div class="catalog-item__col">
-                        <div class="catalog-info _tabs-parent">
-                            <div class="tabs">
-                                <div class="tab _tab _active" data-tab="_tab1">
-                                    <span>Описание</span>
-                                </div>
-                                <div class="tab _tab" data-tab="_tab2">
-                                    <span>Характеристика</span>
-                                </div>
-                                <div class="tab _tab" data-tab="_tab3">
-                                    <span>Инструкция по уходу</span>
-                                </div>
-                            </div>
-
-                            <div class="tab-content _tab1 _active">
-                                <div class="text">
-                                    <h3>Описание изделия:</h3>
-                                    <p>- креп-сатин (100% полиэстер, плотность 140 гр/м2,</p>
-                                    <p>- мокрый шелк (100% полиэстер, плотность 164 гр/м2).</p>
-
-                                    <hr>
-
-                                    <h3>Особенности нанесения:</h3>
-                                    <p>
-                                        Полноцветное нанесение осуществляется методом сублимации. Изображение размещается в
-                                        соответствии с лекалом. Нанесение на косынку входит в стоимость косынки.
-                                    </p>
-
-                                    <hr>
-
-                                    <h3>Размер:</h3>
-                                    <p>Размеры косынок могут отличаться от заявленных на 5% как в большую, так и меньшую сторону.</p>
-
-                                    <hr>
-
-                                    <p>
-                                        * Согласование цвета нанесения возможно только на основании сигнального образца.
-                                        <br>
-                                        * Претензии к цветопередаче без сигнального образца не принимаются.
-                                    </p>
-                                </div>
-                                <div class="catalog-info__nav">
-                                    <button class="m-btn m-btn-primary">
-                                        <span>Расчет стоимости</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="tab-content _tab2">
-                                <div class="text">
-                                    <h3>Характеристика</h3>
-                                    <p>- креп-сатин (100% полиэстер, плотность 140 гр/м2,</p>
-                                    <p>- мокрый шелк (100% полиэстер, плотность 164 гр/м2).</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-content _tab3">
-                                <div class="text">
-                                    <h3>Инструкция по уходу</h3>
-                                    <p>
-                                        * Согласование цвета нанесения возможно только на основании сигнального образца.
-                                        <br>
-                                        * Претензии к цветопередаче без сигнального образца не принимаются.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="m-btn-primary swiper-button swiper-button-prev">
+                        <img src="img/prev3.png" alt="">
+                    </div>
+                    <div class="m-btn-primary swiper-button swiper-button-next">
+                        <img src="img/next3.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="services">
+        <div class="print">
             <div class="container">
-                <div class="services__top">
-                    <div class="services__title text35 bold-text">
-                        Другие услуги
+                <div class="print__title text35 bold-text">
+                    Печать на синтетических и смесовых тканях
+                    шириной до 160 см для изготовления:
+                </div>
+                <div class="print__items">
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Флажная продукция (уличные флаги, знамёна,штандарты, флагштоки)
+                        </div>
+                    </div>
+
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img2.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Промо-одежды для рекламных кампаний (накидки, номера стартовые, футболки)
+                        </div>
+                    </div>
+
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img3.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Корпоративная одежда (галстуки, банданы, косынки, фартуки)
+                        </div>
+                    </div>
+
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img4.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Ткани для оформления интерьера (шторы, скатерти, текстильные баннеры, картины, обивка мебели...)
+                        </div>
+                    </div>
+
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img5.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Постельные принадлежности (подушки, покрывала, пледы, постельное белье ,полотенца)
+                        </div>
+                    </div>
+
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img6.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Печать на тканях от тонкого шифона до плотного флиса и микровелюра
+                        </div>
+                    </div>
+
+                    <div class="print-card">
+                        <div class="print-card__img">
+                            <img src="img/print_img7.png" alt="">
+                            <a href="" class="print-card__link m-btn m-btn-blue">
+                                <span>подробнее</span>
+                            </a>
+                        </div>
+                        <div class="print-card__title">
+                            Спортивная форма
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <form class="order">
+            <div class="container">
+                <div class="order__top">
+                    <div class="order__title text35 bold-text">
+                        Заказать тестовую печать Вашего образца
+                    </div>
+                    <div class="order__desc text17">
+                        Печать бесплатная, оставьте заявку, мы перезвоним для уточнения деталей.
                     </div>
                 </div>
-                <div class="services-slider slider">
-                    <div class="slider__wrap">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="service-card">
-                                        <div class="service-card__content">
-                                            <div class="service-card__title">
-                                                Одежда
-                                            </div>
-                                            <ul class="service-card__links">
-                                                <li><a href="">Банданы</a></li>
-                                                <li><a href="">Бейсболки</a></li>
-                                                <li>
-                                                    <a href="">Косынки, платки</a>
-                                                    <ul>
-                                                        <li><a href="">- Треугольные косынки</a></li>
-                                                        <li><a href="">- Французские косынки</a></li>
-                                                        <li><a href="">- Платки</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="">Фартуки</a></li>
-                                                <li><a href="">Промо-накидки</a></li>
-                                                <li><a href="">Шарфы</a></li>
-                                                <li><a href="">Сумка шоппер</a></li>
-                                                <li><a href="">Жилет сигнальный </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="service-card__img">
-                                            <img src="img/service.webp" alt="">
-                                        </div>
-                                    </div>
+                <div class="order__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Телефон">
+                        <span class="fg__icon">
+                            <img src="img/phone.png" alt="">
+                        </span>
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                        <span class="fg__icon">
+                            <img src="img/user.png" alt="">
+                        </span>
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Желаемая ткань">
+                        <span class="fg__icon">
+                            <img src="img/cloth.png" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="file-input2">
+                    <span class="file-input2__title">Прикрепить файл с расширениями JPEG, tiff, PDF, ai</span>
+                    <button class="file-input2__btn">
+                        <img src="img/plus.png" alt="">
+                        <span>добавить</span>
+                        <input type="file">
+                    </button>
+                </div>
+                <div class="order__nav">
+                    <button class="order__btn m-btn m-btn-blue">
+                        <span>Заказать тестовую печать</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <!--        advantage-icon-->
+        <div class="advantages">
+            <div class="container">
+                <div class="advantages__top">
+                    <div class="advantages__desc text17">
+                        Мы гордимся нашими преимуществами
+                    </div>
+                    <div class="advantages__title text35 bold-text">
+                        Преимущества
+                    </div>
+                </div>
+                <div class="advantages__grid">
+                    <div class="advantage-card">
+                        <div class="advantage-card__title">
+                            Профессионализм
+                        </div>
+                        <div class="advantage-card__icon">
+                            <img src="img/advantage-icon.png" alt="">
+                        </div>
+                        <div class="advantage-card__desc">
+                            Профессионально печатаем на рулонной ткани с 2016 г.
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="service-card">
-                                        <div class="service-card__content">
-                                            <div class="service-card__title">
-                                                Одежда для спорта
-                                            </div>
-                                            <ul class="service-card__links">
-                                                <li><a href="">Банданы</a></li>
-                                                <li><a href="">Бейсболки</a></li>
-                                                <li>
-                                                    <a href="">Косынки, платки</a>
-                                                    <ul>
-                                                        <li><a href="">- Треугольные косынки</a></li>
-                                                        <li><a href="">- Французские косынки</a></li>
-                                                        <li><a href="">- Платки</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="">Фартуки</a></li>
-                                                <li><a href="">Промо-накидки</a></li>
-                                                <li><a href="">Шарфы</a></li>
-                                                <li><a href="">Сумка шоппер</a></li>
-                                                <li><a href="">Жилет сигнальный </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="service-card__img">
-                                            <img src="img/service2.webp" alt="">
-                                        </div>
-                                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-card__title">
+                            Печатаем <br> точно в цвет
+                        </div>
+                        <div class="advantage-card__icon">
+                            <img src="img/advantage-icon2.png" alt="">
+                        </div>
+                        <div class="advantage-card__desc">
+                            Печатаем в соответствии с таблицей Pantone Color Bridge Coated Process.
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="service-card">
-                                        <div class="service-card__content">
-                                            <div class="service-card__title">
-                                                Корпоративная одежда
-                                            </div>
-                                            <ul class="service-card__links">
-                                                <li><a href="">Банданы</a></li>
-                                                <li><a href="">Бейсболки</a></li>
-                                                <li>
-                                                    <a href="">Косынки, платки</a>
-                                                    <ul>
-                                                        <li><a href="">- Треугольные косынки</a></li>
-                                                        <li><a href="">- Французские косынки</a></li>
-                                                        <li><a href="">- Платки</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="">Фартуки</a></li>
-                                                <li><a href="">Промо-накидки</a></li>
-                                                <li><a href="">Шарфы</a></li>
-                                                <li><a href="">Сумка шоппер</a></li>
-                                                <li><a href="">Жилет сигнальный </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="service-card__img">
-                                            <img src="img/service3.webp" alt="">
-                                        </div>
-                                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-card__title">
+                            Сроки <br> изготовления
+                        </div>
+                        <div class="advantage-card__icon">
+                            <img src="img/advantage-icon3.png" alt="">
+                        </div>
+                        <div class="advantage-card__desc">
+                            Стандартный срок печати на ткани от 3-ех рабочих дней, всегда идём навстречу заказчикам которым нужна срочная печать, мы не подводим своих клиентов.
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="service-card">
-                                        <div class="service-card__content">
-                                            <div class="service-card__title">
-                                                Оформление интерьера
-                                            </div>
-                                            <ul class="service-card__links">
-                                                <li><a href="">Банданы</a></li>
-                                                <li><a href="">Бейсболки</a></li>
-                                                <li>
-                                                    <a href="">Косынки, платки</a>
-                                                    <ul>
-                                                        <li><a href="">- Треугольные косынки</a></li>
-                                                        <li><a href="">- Французские косынки</a></li>
-                                                        <li><a href="">- Платки</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="">Фартуки</a></li>
-                                                <li><a href="">Промо-накидки</a></li>
-                                                <li><a href="">Шарфы</a></li>
-                                                <li><a href="">Сумка шоппер</a></li>
-                                                <li><a href="">Жилет сигнальный </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="service-card__img">
-                                            <img src="img/service4.webp" alt="">
-                                        </div>
-                                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-card__title">
+                            Скидки постоянным клиентам
+                        </div>
+                        <div class="advantage-card__icon">
+                            <img src="img/advantage-icon4.png" alt="">
+                        </div>
+                        <div class="advantage-card__desc">
+                            У нас особые условия для постоянных клиентов, рекламных агентств и швейных производств.
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="service-card">
-                                        <div class="service-card__content">
-                                            <div class="service-card__title">
-                                                Оформление интерьера
-                                            </div>
-                                            <ul class="service-card__links">
-                                                <li><a href="">Банданы</a></li>
-                                                <li><a href="">Бейсболки</a></li>
-                                                <li>
-                                                    <a href="">Косынки, платки</a>
-                                                    <ul>
-                                                        <li><a href="">- Треугольные косынки</a></li>
-                                                        <li><a href="">- Французские косынки</a></li>
-                                                        <li><a href="">- Платки</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="">Фартуки</a></li>
-                                                <li><a href="">Промо-накидки</a></li>
-                                                <li><a href="">Шарфы</a></li>
-                                                <li><a href="">Сумка шоппер</a></li>
-                                                <li><a href="">Жилет сигнальный </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="service-card__img">
-                                            <img src="img/service4.webp" alt="">
-                                        </div>
-                                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-card__title">
+                            Цветостойкость
+                        </div>
+                        <div class="advantage-card__icon">
+                            <img src="img/advantage-icon5.png" alt="">
+                        </div>
+                        <div class="advantage-card__desc">
+                            Сублимационные чернила не выстирываются и не линяют со временем, не имеют запаха и абсолютно безопасны.
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <div class="container">
+                <div class="works__title text35 bold-text">
+                    Наши работы
+                </div>
+                <div class="works-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work.png" data-fancybox class="work-card__img">
+                                            <img src="img/work.png" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work2.png" data-fancybox class="work-card__img">
+                                            <img src="img/work2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work3.png" data-fancybox class="work-card__img">
+                                            <img src="img/work3.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work4.png" data-fancybox class="work-card__img">
+                                            <img src="img/work4.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work5.png" data-fancybox class="work-card__img">
+                                            <img src="img/work5.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work6.png" data-fancybox class="work-card__img">
+                                            <img src="img/work6.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work7.png" data-fancybox class="work-card__img">
+                                            <img src="img/work7.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work8.png" data-fancybox class="work-card__img">
+                                            <img src="img/work8.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work9.png" data-fancybox class="work-card__img">
+                                            <img src="img/work9.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work10.png" data-fancybox class="work-card__img">
+                                            <img src="img/work10.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work.png" data-fancybox class="work-card__img">
+                                            <img src="img/work.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card _scale-img">
+                                    <div class="work-card__inner">
+                                        <a href="img/work.png" data-fancybox class="work-card__img">
+                                            <img src="img/work.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -409,63 +564,386 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="categories">
+            <div class="container">
+                <div class="categories__title text35 bold-text">
+                    Категории услуг
+                </div>
+                <div class="categories__grid">
+                    <div class="category-card">
+                        <div class="category-card__img">
+                            <img src="img/category.png" alt="">
+                        </div>
+                        <div class="category-card__content">
+                            <div class="category-card__title">
+                                Печать на футболках
+                            </div>
+                            <div class="category-card__desc">
+                                Для полноцветной печати внутрь волокон ткани на футболках мы
+                                используем белые футболки самого нового поколения Премиум.
+                                Футболки Премиум изготовлены изготовлены из высококачественного....
+                            </div>
+                            <div class="category-card__nav">
+                                <a href="" class="category-card__btn m-btn m-btn-primary">
+                                    <span>подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-card__img">
+                            <img src="img/category2.png" alt="">
+                        </div>
+                        <div class="category-card__content">
+                            <div class="category-card__title">
+                                Печать на толстовках
+                            </div>
+                            <div class="category-card__desc">
+                                Для полноцветной печати внутрь волокон ткани на футболках мы
+                                используем белые футболки самого нового поколения Премиум.
+                                Футболки Премиум изготовлены изготовлены из высококачественного....
+                            </div>
+                            <div class="category-card__nav">
+                                <a href="" class="category-card__btn m-btn m-btn-primary">
+                                    <span>подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-card__img">
+                            <img src="img/category3.png" alt="">
+                        </div>
+                        <div class="category-card__content">
+                            <div class="category-card__title">
+                                Печать на сумках
+                            </div>
+                            <div class="category-card__desc">
+                                Для полноцветной печати внутрь волокон ткани на футболках мы
+                                используем белые футболки самого нового поколения Премиум.
+                                Футболки Премиум изготовлены изготовлены из высококачественного....
+                            </div>
+                            <div class="category-card__nav">
+                                <a href="" class="category-card__btn m-btn m-btn-primary">
+                                    <span>подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-card__img">
+                            <img src="img/category4.png" alt="">
+                        </div>
+                        <div class="category-card__content">
+                            <div class="category-card__title">
+                                Печать на куртках
+                            </div>
+                            <div class="category-card__desc">
+                                Для полноцветной печати внутрь волокон ткани на футболках мы
+                                используем белые футболки самого нового поколения Премиум.
+                                Футболки Премиум изготовлены изготовлены из высококачественного....
+                            </div>
+                            <div class="category-card__nav">
+                                <a href="" class="category-card__btn m-btn m-btn-primary">
+                                    <span>подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="awards">
+            <div class="container">
+                <div class="awards__title text35 bold-text">
+                    Достижения
+                </div>
+                <div class="awards__grid">
+                    <div class="award-card">
+                        <div class="award-card__top">
+                            <div class="award-card__icon">
+                                <img src="img/award_icon.png" alt="">
+                            </div>
+                            <div class="award-card__title">
+                                18 лет успешной работы
+                            </div>
+                        </div>
+                        <div class="award-card__desc">
+                            С 2005 г работаем в печатной индустрии. 90% новых клиентов становятся нашими постоянными заказчиками и советуют нас другим.
+                        </div>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-card__top">
+                            <div class="award-card__icon">
+                                <img src="img/award_icon2.png" alt="">
+                            </div>
+                            <div class="award-card__title">
+                                Собственное производство
+                            </div>
+                        </div>
+                        <div class="award-card__desc">
+                            Все заказы клиентов изготавливаем на собственном оборудовании с контролем качества на каждом этапе.
+                        </div>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-card__top">
+                            <div class="award-card__icon">
+                                <img src="img/award_icon3.png" alt="">
+                            </div>
+                            <div class="award-card__title">
+                                Большой склад
+                            </div>
+                        </div>
+                        <div class="award-card__desc">
+                            Большие запасы рулонной ткани от шифона до флиса в Улан-Удэ
+                        </div>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-card__top">
+                            <div class="award-card__icon">
+                                <img src="img/award_icon4.png" alt="">
+                            </div>
+                            <div class="award-card__title">
+                                Команда профессионалов
+                            </div>
+                        </div>
+                        <div class="award-card__desc">
+                            Мы знаем все тонкости и ньюансы печати на ткани, подберем наилучший метод печати согласно ТЗ.
+                        </div>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-card__top">
+                            <div class="award-card__icon">
+                                <img src="img/award_icon5.png" alt="">
+                            </div>
+                            <div class="award-card__title">
+                                90%
+                            </div>
+                        </div>
+                        <div class="award-card__desc">
+                            Новых клиентов становятся нашими постоянными заказчиками и советуют нас другим.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="how-work">
+            <div class="container">
+                <div class="how-work__top">
+                    <div class="how-work__title text35 bold-text">
+                        Как мы работаем
+                    </div>
+                    <div class="how-work__desc text17">
+                        В нашей компании налажено полиграфическое производство полного цикла, включающее следующие этапы:
+                    </div>
+                </div>
+                <div class="how-work__bottom">
+                    <div class="how-work__grid">
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Заявка</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Обработка 111 с сайта, почты, мессенджеров и других каналов связи.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Согласование ТЗ</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Менеджер связывается с заказчиком и уточняет все детали заказа.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Подготовка макета</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Изготовление макета с нуля, или редактирование готового макета заказчика, редактируем по размерам шаблоны.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Цветопроба</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Тестовая печать образца вашего макета с настройкой по цветам согласно брендбука.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="how-work__grid2">
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Согласование</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Согласование тестовой печати.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Печать</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Запуск вашего заказа в тираж.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Закрепление красок</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Технология предусматривает закрепление чернил при высокой температуре.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <span>Упаковка</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Упаковка вашего заказа.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item__top">
+                                <div class="step-item__inner">
+
+                                    <img src="img/step_icon.png" alt="">
+
+                                    <span>Доставка клиенту</span>
+                                </div>
+                            </div>
+                            <div class="step-item__desc">
+                                Вы забираете готовый заказ в офисе, либо мы его вам доставляем на указанный адрес
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__mainblock">
-                <div class="footer__mainblock__item ">
-                    <img src="./uploads/logofooter.png" alt="logo">
-                    <div class="footer__mainblock__item__text">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="footer__info">
                         г. Улан-Удэ, 112 мкр-н. дом 27, цоколь <br>
-                WhatsApp / Viber / Telegram: 8(9244) 57-36-36 <br>
-                printex@mail.ru
+                WhatsApp / Viber / Telegram: <a href="">8(9244) 57-36-36</a> <br>
+                        <a href="mailto:printex@mail.ru">
+                            printex@mail.ru
+                        </a>
                     </div>
-                    <div class="footer__mainblock__item__text">
+                    <div class="footer__info">
                         Пн - Пт : 09:00 - 18:00 <br>
                 Сб - Вс. : выходной
                     </div>
                 </div>
-                <div class="footer__mainblock__item footer__mainblock__item__blocklinks">
-                    <div class="footer__mainblock__item__listlinks">
-                        <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Наша команда</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Наши работы / Портфолио</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__mainblock__item__listlinks">
-                        <ul>
-                            <li><a href="#">Каталог услуг</a></li>
-                            <li><a href="#">Требование к файлам</a></li>
-                            <li><a href="#">Вопросы и ответы</a></li>
-                            <li><a href="#">Сертификаты</a></li>
-                            <li><a href="#">Обработка персональных данных</a></li>
-                        </ul>
+
+                <div class="footer__col">
+                    <div class="footer-nav">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Каталог услуг</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Требования к файлам</a></li>
+                        <li><a href="">Наша Команда</a></li>
+                        <li><a href="">Вопросы и ответы</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">Сертификаты</a></li>
+                        <li><a href="">Наши работы / Портфолио</a></li>
+                        <li><a href="">Обработка персональных данных</a></li>
                     </div>
                 </div>
-                <div class="footer__mainblock__item">
-                    <div class="footer__mainblock__item__call">
-                        <form action="">
-                            <input type="text" name="phone" placeholder="Ваш телефон">
-                            <input type="submit" name="submit" value="ПЕРЕЗВОНИТЕ МНЕ">
-                        </form>
-                    </div>
-                    <div class="footer__mainblock__item__social">
-                        <span>Оставайтесь на связи:</span>
-                        <a href="#"><img src="./uploads/f-whatsapp.png" alt="f-whatsapp"></a>
-                        <a href="#"><img src="./uploads/f-inst.png" alt="f-inst"></a>
-                        <a href="#"><img src="./uploads/f-vk.png" alt="f-vk"></a>
+
+                <div class="footer__col footer__col3">
+                    <form class="footer-subscribe">
+                        <div class="footer-subscribe__field">
+                            <input type="text" placeholder="Ваш телефон">
+                            <img src="img/phone.png" alt="" class="footer-subscribe__icon">
+                        </div>
+                        <button class="footer-subscribe__btn m-btn m-btn-primary">
+                            <span>Перезвоните мне</span>
+                        </button>
+                    </form>
+                    <div class="footer-socials">
+                        <div class="footer-socials__title">
+                            Оставайтесь на связи:
+                        </div>
+                        <a href="" class="footer-socials__item">
+                            <img src="img/whatsapp.png" alt="">
+                        </a>
+                        <a href="" class="footer-socials__item">
+                            <img src="img/instagram.png" alt="">
+                        </a>
+                        <a href="" class="footer-socials__item">
+                            <img src="img/vk2.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer__copyright">
-                <div class="footer__copyright__text">Copyright © 2023 г. «Printex - Текстильная типография». Все права защищены</div>
-                <div class="footer__copyright__contact"><a href="https://cg-top.ru/">Разработка сайта — contactgroup.ru</a></div>
+            <div class="footer__bottom">
+                <div class="footer__c">
+                    Copyright © 2023 г. «Printex - Текстильная типография». Все права защищены
+                </div>
+                <div class="footer__by">
+                    Разработка сайта — <a href="">contactgroup.ru</a>
+                </div>
             </div>
         </div>
+        <button class="scroll-up">
+            <img src="img/arrow_top.png" alt="">
+        </button>
 
     </footer>
 
@@ -473,7 +951,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
     <script src="js/main.min.js"></script>
 
 </body>
